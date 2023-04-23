@@ -6,6 +6,12 @@ from os import environ
 app = Flask(__name__)
 
 
+@app.route('/', strict_slashes=False)
+def hello_world():
+    """ Entry route """
+    return "Hello HBNB!"
+
+
 @app.route('/hbnb', strict_slashes=False)
 def hello_flask():
     """ Hbnb route """
