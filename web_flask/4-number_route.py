@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """Flask Module"""
 
@@ -21,8 +20,8 @@ def hello_flask():
 
 @app.route('/c/<text>', strict_slashes=False)
 def c_is_fun(text):
-    """ c is fun(:\) route """
-    textreplace = text.replace('_',' ')
+    """ c is fun(:-) route """
+    textreplace = text.replace('_', ' ')
     return "C {}".format(textreplace)
 
 
@@ -30,7 +29,7 @@ def c_is_fun(text):
 @app.route('/python/<text>', strict_slashes=False)
 def python_is_fun(text='is cool'):
     """ python is cool route """
-    textreplace = text.replace('_',' ')
+    textreplace = text.replace('_', ' ')
     return "Python {}".format(textreplace)
 
 

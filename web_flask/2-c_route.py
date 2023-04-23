@@ -5,6 +5,7 @@ from flask import Flask
 from os import environ
 app = Flask(__name__)
 
+
 @app.route('/', strict_slashes=False)
 def hello_world():
     """ Entry route """
@@ -19,8 +20,8 @@ def hello_flask():
 
 @app.route('/c/<text>', strict_slashes=False)
 def c_is_fun(text):
-    """ c is fun(:\) route """
-    textreplace = text.replace('_',' ')
+    """ c is fun(:-) route """
+    textreplace = text.replace('_', ' ')
     return "C {}".format(textreplace)
 
 
